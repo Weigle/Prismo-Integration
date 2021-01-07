@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: prismo
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://mysqlPrismo8:3306/prismo
+    username: root
+    password: root
+server:
+  port: 8761
