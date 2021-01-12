@@ -1,22 +1,22 @@
 version: '3.4'
 
 services:
-  mysqlPrismo8:
+  mysqlpismo8:
     image: mysql:8
-    container_name: mysqlPrismo8
+    container_name: mysqlpismo8
     command: --default-authentication-plugin=mysql_native_password
     ports:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: prismo
+      MYSQL_DATABASE: pismo
 
-  spring-prismo:
+  spring-pismo:
     build:
       context: .
       dockerfile: "./Dockerfile"
-    container_name: spring-prismo
+    container_name: spring-pismo
     volumes:
-      - "./target/prismo-0.0.1-SNAPSHOT.jar:/app.jar"
+      - "./target/primo-0.0.1-SNAPSHOT.jar:/app.jar"
     ports:
       - 8761:8761

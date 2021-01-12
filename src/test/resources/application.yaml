@@ -3,7 +3,7 @@ spring:
     driverClassName: org.h2.Driver
     url: jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
   application:
-    name: prismo
+    name: pismo
   jpa:
     database: mysql
     hibernate:
