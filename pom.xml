@@ -8,8 +8,8 @@
 		<version>2.4.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.primo</groupId>
-	<artifactId>primo</artifactId>
+	<groupId>com.pismo</groupId>
+	<artifactId>pismo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>pismo</name>
 	<description>Demo project for Spring Boot</description>

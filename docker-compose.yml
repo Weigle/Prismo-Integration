@@ -12,11 +12,13 @@ services:
       MYSQL_DATABASE: pismo
 
   spring-pismo:
+    depends_on:
+      - "mysqlpismo8"
     build:
       context: .
       dockerfile: "./Dockerfile"
     container_name: spring-pismo
     volumes:
-      - "./target/primo-0.0.1-SNAPSHOT.jar:/app.jar"
+      - "./target/pismo-0.0.1-SNAPSHOT.jar:/app.jar"
     ports:
       - 8761:8761
